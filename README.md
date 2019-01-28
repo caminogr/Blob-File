@@ -5,6 +5,7 @@ https://hakuhin.jp/js/file.html
 http://var.blog.jp/archives/62330155.html
 
 ## Blob
+> A Blob object represents a file-like object of immutable, raw data.
 
 **property**
 - Blob.size
@@ -13,6 +14,17 @@ http://var.blog.jp/archives/62330155.html
 
 ## File
 extends Blob
+
+**property**
+extended property
+- File.size
+- File.type  
+
+File orginal
+- File.lastModified 
+- File.lastModifiedDate
+- File.name 
+- File.webkitRelativePath 
 
 ## FileReader
 read Blob or File
