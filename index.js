@@ -1,10 +1,10 @@
 document.getElementById("file").addEventListener("change", function() {
   // We can see local file as File
-  console.log("this", this.files[0]);
+  // console.log("this", this.files[0]);
   const file = this.files[0];
   const reader = new FileReader();
   reader.onload = function() {
-    console.log(reader.result);
+    // console.log(reader.result);
   };
   //   const text = reader.readAsText(file); // 
   //   console.log("text", text);
@@ -16,5 +16,5 @@ document.getElementById("file").addEventListener("change", function() {
   //   console.log("dataUrl", dataUrl);
 
   const binaryString = reader.readAsBinaryString(file); // <xml>foo</xml>
-  console.log("binaryString", binaryString);
+  // console.log("binaryString", binaryString);
 });
